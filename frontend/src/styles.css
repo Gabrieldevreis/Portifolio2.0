@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+      /* Dark Theme */
+      --primary-purple: #8205e0;
+      --primary-cyan: #00e5ff;
+      --bg-dark: #0a0a14;
+      --bg-card-dark: #16161f;
+      --text-light: #ffffff;
+      --text-muted: #a0a0b8;
+      
+      /* Light Theme */
+      --bg-light: #faf8ff;
+      --bg-card-light: #ffffff;
+      --text-dark: #1a0a2e;
+      --text-muted-light: #6b5b8c;
+      --border-light: #e8e4f3;
+      --shadow-light: rgba(138, 43, 226, 0.08);
+    }
