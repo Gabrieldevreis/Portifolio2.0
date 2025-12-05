@@ -11,7 +11,7 @@ const routes: Routes = [
     component: MainComponent,
   },
   {
-    path: 'home',
+    path: '',
     component: MainComponent,
     children: [
       {
@@ -28,7 +28,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'projects',
         pathMatch: 'full',
       },
     ],
