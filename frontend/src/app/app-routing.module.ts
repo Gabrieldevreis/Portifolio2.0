@@ -6,10 +6,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MainComponent,
-  },
+ 
   {
     path: '',
     component: MainComponent,
