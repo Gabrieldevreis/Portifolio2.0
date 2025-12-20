@@ -13,6 +13,7 @@ import { CertificatesComponent } from './pages/certifications/certificates.compo
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
 import { RouterModule } from '@angular/router';
 import { NavigationComponent } from './pages/navigation/navigation.component';
+import { ExperiencesComponent } from './pages/experiences/experiences.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NavigationComponent } from './pages/navigation/navigation.component';
     CertificatesComponent,
     TechnologiesComponent,
     NavigationComponent,
+    ExperiencesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [provideClientHydration()],
