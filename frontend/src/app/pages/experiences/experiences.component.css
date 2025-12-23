@@ -8,11 +8,11 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #222;
+  color: var(--purple);
 }
 
 .experiencia-card {
-  background: #ffffff;
+  background: var(--bg-card-dark);
   border-left: 6px solid #4f46e5;
   padding: 25px;
   margin-bottom: 25px;
@@ -23,13 +23,13 @@
 .experiencia-card h3 {
   margin: 0;
   font-size: 1.4rem;
-  color: #111;
+  color: var(--purple);
 }
 
 .empresa {
   display: block;
   font-size: 0.95rem;
-  color: #666;
+  color: var(--text-muted);
   margin: 8px 0 15px;
 }
 
@@ -37,7 +37,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
-  color: #444;
+  color: var(--text-muted);
 }
 
 .experiencia-card ul {
@@ -48,7 +48,7 @@
 .experiencia-card ul li {
   font-size: 0.95rem;
   margin-bottom: 8px;
-  color: #555;
+  color: var(--text-muted);
 }
 
 @media (max-width: 600px) {

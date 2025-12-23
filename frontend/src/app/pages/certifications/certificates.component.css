@@ -6,6 +6,7 @@
 header h1 {
   margin: 0;
   font-size: 28px;
+  color: var(--purple);
 }
 
 .cards-section {
@@ -15,7 +16,7 @@ header h1 {
 }
 
 .certificate-card {
-  background: #ffffff;
+  background: var(--bg-card-dark);
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -33,8 +34,8 @@ header h1 {
 }
 
 .badge {
-  background: #c9a24d;
   color: #fff;
+  border:solid 1px var(--purple);
   padding: 5px 14px;
   border-radius: 20px;
   font-size: 12px;
@@ -45,17 +46,17 @@ header h1 {
 .certificate-card h2 {
   font-size: 20px;
   margin: 0 0 10px;
-  color: #111827;
+  color:var(--white);
 }
 
 .certificate-card p {
   margin: 6px 0;
   font-size: 14px;
-  color: #555;
+  color:var(--white);
 }
 
 .certificate-card strong {
-  color: #111827;
+  color: var(--purple);
 }
 
 .card-footer {
@@ -72,7 +73,7 @@ header h1 {
 }
 
 .btn {
-  background: #111827;
+  background: var(--purple);
   color: #fff;
   border: none;
   padding: 10px 16px;
