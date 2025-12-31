@@ -1,31 +1,22 @@
 <section class="experiencias">
   <h2>Experiência Profissional</h2>
 
-  <div class="experiencia-card">
-    <h3>Desenvolvedor Front-end</h3>
-    <span class="empresa">Empresa X • 2023 - Atual</span>
-    <p>
-      Desenvolvimento de interfaces modernas e responsivas utilizando HTML, CSS,
-      TypeScript e Angular, com foco em usabilidade e performance.
-    </p>
-    <ul>
-      <li>Criação de componentes reutilizáveis</li>
-      <li>Integração com APIs REST</li>
-      <li>Versionamento com Git</li>
-    </ul>
-  </div>
+  <div
+    class="experiencia-card"
+    *ngFor="let experiencia of experiencias"
+  >
+    <h3>{{ experiencia.cargo }}</h3>
 
-  <div class="experiencia-card">
-    <h3>Desenvolvedor Full Stack Júnior</h3>
-    <span class="empresa">Startup Y • 2022 - 2023</span>
-    <p>
-      Atuação no desenvolvimento completo de aplicações web, participando desde
-      o front-end até o back-end.
-    </p>
+    <span class="empresa">
+      {{ experiencia.empresa }} • {{ experiencia.periodo }}
+    </span>
+
+    <p>{{ experiencia.descricao }}</p>
+
     <ul>
-      <li>Front-end com Angular</li>
-      <li>Back-end com Node.js</li>
-      <li>Banco de dados SQL</li>
+      <li *ngFor="let atividade of experiencia.atividades">
+        {{ atividade }}
+      </li>
     </ul>
   </div>
 </section>

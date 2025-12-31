@@ -1,44 +1,36 @@
-
 <div class="content-area">
   <header>
-  <h1>Meus Certificados</h1>
-</header>
+    <h1>Meus Certificados</h1>
+  </header>
 
-<section class="cards-section">
-  <div class="certificate-card">
-    <span class="badge">Certificado</span>
-    <h2>Gestão Financeira para Pizzarias</h2>
-    <p><strong>Aluno:</strong> Gabriel Reis</p>
-    <p><strong>Carga horária:</strong> 20 horas</p>
+  <section class="cards-section">
+    <div
+      class="certificate-card"
+      *ngFor="let certificado of certificados"
+    >
+      <span class="badge">Certificado</span>
 
-    <div class="card-footer">
-      <span class="date">19/12/2025</span>
-      <button class="btn">Ver certificado</button>
+      <h2>{{ certificado.titulo }}</h2>
+
+      <p>
+        <strong>Aluno:</strong> {{ certificado.aluno }}
+      </p>
+
+      <p>
+        <strong>Carga horária:</strong>
+        {{ certificado.cargaHoraria }} horas
+      </p>
+
+      <div class="card-footer">
+        <span class="date">{{ certificado.data }}</span>
+
+        <button
+          class="btn"
+          
+        >
+          Ver certificado
+        </button>
+      </div>
     </div>
-  </div>
-
-  <div class="certificate-card">
-    <span class="badge">Certificado</span>
-    <h2>Controle de Caixa e Fluxo Financeiro</h2>
-    <p><strong>Aluno:</strong> Gabriel Reis</p>
-    <p><strong>Carga horária:</strong> 12 horas</p>
-
-    <div class="card-footer">
-      <span class="date">10/11/2025</span>
-      <button class="btn">Ver certificado</button>
-    </div>
-  </div>
-
-  <div class="certificate-card">
-    <span class="badge">Certificado</span>
-    <h2>Atendimento e Fidelização de Clientes</h2>
-    <p><strong>Aluno:</strong> Gabriel Reis</p>
-    <p><strong>Carga horária:</strong> 8 horas</p>
-
-    <div class="card-footer">
-      <span class="date">02/10/2025</span>
-      <button class="btn">Ver certificado</button>
-    </div>
-  </div>
-</section>
+  </section>
 </div>
