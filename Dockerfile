@@ -5,16 +5,10 @@ FROM node:18-alpine AS build
 
 WORKDIR /app
 
-# Copia dependências
 COPY package.json package-lock.json ./
-
-# Instala dependências
 RUN npm ci
 
-# Copia o restante do projeto
 COPY . .
-
-# Build de produção
 RUN npm run build -- --configuration production
 
 
@@ -23,19 +17,15 @@ RUN npm run build -- --configuration production
 # ================================
 FROM nginx:alpine
 
-# Remove config default do Nginx
+# Remove config default
 RUN rm /etc/nginx/conf.d/default.conf
 
-# Copia configuração customizada do Nginx (SPA)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# 👇 USA TEMPLATE (ESSENCIAL NA RAILWAY)
+COPY nginx.conf /etc/nginx/templates/default.conf.template
 
-# Copia os arquivos gerados pelo Angular
-# ⚠️ Ajuste "nome-do-projeto" para o nome real da pasta em /dist
+# 👇 Caminho correto do Angular
 COPY --from=build /app/dist/frontend/browser /usr/share/nginx/html
 
-
-# Expor porta 80
 EXPOSE 80
 
-# Inicia o Nginx
 CMD ["nginx", "-g", "daemon off;"]
