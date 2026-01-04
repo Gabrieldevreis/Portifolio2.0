@@ -75,4 +75,9 @@ app-navigation {
   app-siderbar {
     display: none;
   }
+
+  app-navigation {
+    width: 100%;
+    max-width: 100%;
+  }
 }
