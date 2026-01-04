@@ -1,19 +1,10 @@
 <div class="container">
-  <app-siderbar *ngIf="showSidebar || !isMobile"></app-siderbar>
-  <div class="container-main" *ngIf="!showSidebar || !isMobile">
+  <app-siderbar></app-siderbar>
+  <div class="container-main">
     <div class="content">
-      <!-- <router-outlet></router-outlet> -->
+      <router-outlet></router-outlet>
     </div>
-    <app-navigation
-      (openSidebar)="openSidebar()"
-      (navigate)="onNavigate()"
-    ></app-navigation>
+    <app-navigation></app-navigation>
   </div>
-
-  <app-navigation
-    class="mobile-nav"
-    *ngIf="isMobile"
-    (openSidebar)="openSidebar()"
-    (navigate)="onNavigate()"
-  ></app-navigation>
+  <app-navigation class="mobile"></app-navigation>
 </div>
