@@ -66,11 +66,23 @@ app-navigation {
 }
 
 @media (max-width: 916px) {
-  .container{
+  .container {
     flex-direction: column;
+    padding: 12px;
+    min-height: 100svh;
   }
 
-  app-siderbar{
-    display:none;
+  app-siderbar {
+    display: none;
+  }
+
+  .container-main {
+    height: auto;
+    flex: 1;
+  }
+
+  app-navigation {
+    width: 100%;
+    max-width: 100%;
   }
 }
