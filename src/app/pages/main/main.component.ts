@@ -9,7 +9,9 @@ export class MainComponent implements OnInit {
   isMobile = false;
   showSidebar = true;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.checkScreen();
+  }
 
   @HostListener('window:resize')
   checkScreen() {
