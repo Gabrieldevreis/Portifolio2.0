@@ -59,7 +59,8 @@ app-navigation {
 }
 
 .mobile-nav {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 8%;
   margin: 0 auto;
 }
