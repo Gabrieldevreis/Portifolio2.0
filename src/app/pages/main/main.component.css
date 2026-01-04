@@ -51,7 +51,7 @@ app-navigation {
   border-radius: 25px;
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
   height: 55px;
   margin: auto;
   width: 450px;
@@ -61,8 +61,8 @@ app-navigation {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55), 0 0 25px rgba(139, 92, 246, 0.2);
 }
 
-.mobile{
-  display:none;
+.mobile {
+  display: none;
 }
 
 @media (max-width: 916px) {
@@ -74,15 +74,5 @@ app-navigation {
 
   app-siderbar {
     display: none;
-  }
-
-  .container-main {
-    height: auto;
-    flex: 1;
-  }
-
-  app-navigation {
-    width: 100%;
-    max-width: 100%;
   }
 }
