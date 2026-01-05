@@ -4,11 +4,13 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
+  height: 100dvh; /* Dynamic viewport height - considera a barra do navegador */
   padding: 30px;
   gap: 30px;
   background: var(--bg-dark)
     url("https://www.transparenttextures.com/patterns/stardust.png");
   background-size: contain;
+  overflow: hidden; /* Evita scroll no container principal */
 }
 
 app-siderbar {
@@ -18,6 +20,7 @@ app-siderbar {
   max-width: 450px;
   height: 100%;
   max-height: 80vh;
+  max-height: 80dvh;
   border: 1px solid #ffffff1a;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55), 0 0 25px rgba(139, 92, 246, 0.2);
   background-color: #0f0b1a;
@@ -26,6 +29,7 @@ app-siderbar {
 
 .container-main {
   height: 80vh;
+  height: 80dvh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -38,6 +42,7 @@ app-siderbar {
   background-color: #0f0b1a;
   border-right: 1px solid rgba(139, 92, 246, 0.15);
   overflow-x: hidden;
+  overflow-y: auto;
   padding: 1rem 3rem;
   border: 1px solid #ffffff1a;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55), 0 0 25px rgba(139, 92, 246, 0.2);
@@ -69,7 +74,8 @@ app-navigation {
   .container {
     flex-direction: column;
     padding: 12px;
-    min-height: 100svh;
+    height: 100svh; /* Mantém altura fixa com Small Viewport */
+    min-height: unset; /* Remove min-height */
   }
 
   app-siderbar {
@@ -80,4 +86,5 @@ app-navigation {
     width: 100%;
     max-width: 100%;
   }
+
 }
