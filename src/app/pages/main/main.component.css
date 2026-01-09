@@ -27,7 +27,7 @@ app-siderbar {
 }
 
 .container-main {
-  height: 80dvh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ app-navigation {
   .container {
     flex-direction: column;
     padding: 12px;
-    height: 100svh; /* Mantém altura fixa com Small Viewport */
+    height: 100vh; /* Mantém altura fixa com Small Viewport */
     min-height: unset; /* Remove min-height */
   }
 
