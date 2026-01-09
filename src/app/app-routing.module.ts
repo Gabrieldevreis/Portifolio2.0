@@ -5,6 +5,7 @@ import { CertificatesComponent } from './pages/certifications/certificates.compo
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
 import { ExperiencesComponent } from './pages/experiences/experiences.component';
+import { SiderbarComponent } from './pages/siderbar/siderbar.component';
 
 const routes: Routes = [
  
@@ -12,6 +13,10 @@ const routes: Routes = [
     path: '',
     component: MainComponent,
     children: [
+      {
+        path: 'profile',
+        component: SiderbarComponent,
+      },
       {
         path: 'projects',
         component: ProjectsComponent,
