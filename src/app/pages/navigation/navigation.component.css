@@ -20,4 +20,17 @@
   color: var(--purple);
   transform: translateY(-3px);
 }
+
+/* Esconde por padrão (telas grandes) */
+.icon-mobile {
+  display: none;
+}
+
+/* Mostra apenas em telas pequenas */
+@media (max-width: 768px) {
+  .icon-mobile {
+    display: flex; /* ou block */
+  }
+}
+
  
